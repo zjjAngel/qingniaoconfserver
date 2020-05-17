@@ -1,0 +1,32 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zjjAngel/configserver
+          search-paths: /
+          username: 2996374258@qq.com
+          password: 711757asDF#$
+          basedir: G:/work/config/tmp
+          force-pull: true
+    bus:
+      refresh:
+        enabled: true
+      trace:
+        enabled: false
+#  rabbitmq:
+#    host: 192.168.42.111
+#    port: 5762
+#    username: guest
+#    password: guest
+
+  profiles:
+    active: alpha
+encrypt:
+  key-store:
+    location: config-server.keystore
+    alias: config-server
+    password: 123456
+    secret: 123456
+server:
+  port: 9130

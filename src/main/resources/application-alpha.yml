@@ -1,0 +1,9 @@
+server:
+  port: 9130
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@localhost:8763/eureka/
+spring:
+  application:
+    name: config-server
