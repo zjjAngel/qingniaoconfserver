@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/zjjAngel/configserver
+          uri: https://github.com/zjjAngel/configserver.git
           search-paths: /
           username: 2996374258@qq.com
           password: 711757asDF#$
